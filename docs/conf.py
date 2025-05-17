@@ -26,8 +26,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
-import sys
-sys.path.insert(0,r"C:\Users\thoma\OneDrive\Projects\Programming Projects\Sphinx_Git_Workflow_Tests\ideal-spoon")
+import sys,os
+sys.path.insert(0,os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import MyTestClass
 
 def setup(app):
